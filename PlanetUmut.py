@@ -19,12 +19,13 @@ def callback_message(callback):
         )
 
         markup = types.InlineKeyboardMarkup()
-        markup.add(types.InlineKeyboardButton('Яндекс Такси колдонуу', url='https://t.me/c/3201978020/3'))
-        markup.add(types.InlineKeyboardButton('МБанк колдонуу', url='https://t.me/c/3201978020/4'))
-        markup.add(types.InlineKeyboardButton('Жасалма интеллект колдонуу', url='https://t.me/c/3201978020/5'))
-        markup.add(types.InlineKeyboardButton('Түндүк кирүү', url='https://t.me/c/3201978020/6'))
-        markup.add(types.InlineKeyboardButton('Түндүк колдонуу', url='https://t.me/c/3201978020/7'))
+        markup.add(types.InlineKeyboardButton('Яндекс Такси колдонуу', url='https://t.me/TsyfraDroog/3'))
+        markup.add(types.InlineKeyboardButton('МБанк колдонуу', url='https://t.me/TsyfraDroog/4'))
+        markup.add(types.InlineKeyboardButton('Жасалма интеллект колдонуу', url='https://t.me/TsyfraDroog/5'))
+        markup.add(types.InlineKeyboardButton('Түндүк кирүү', url='https://t.me/TsyfraDroog/6'))
+        markup.add(types.InlineKeyboardButton('Түндүк колдонуу', url='https://t.me/TsyfraDroog/7'))
 
         bot.send_message(callback.message.chat.id, "Төмөнкү темалар боюнча материалдар:", reply_markup=markup)
+
 
 bot.polling(none_stop=True)
