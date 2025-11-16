@@ -15,7 +15,7 @@ def callback_message(callback):
     if callback.data == 'ended':
         bot.send_message(
             callback.message.chat.id,
-            'Сурамжылоону бүтүргөн болсоңуз, заманбап тиркемелерди колдонуу боюнча жардам алуу үчүн биздин Telegram каналыбызга баш багыңыз @osh_project.'
+            'Сурамжылоону бүтүргөн болсоңуз, заманбап тиркемелерди колдонуу боюнча жардам алуу үчүн биздин Telegram каналыбызга баш багыңыз @TsyfraDroog.'
         )
 
         markup = types.InlineKeyboardMarkup()
@@ -29,3 +29,4 @@ def callback_message(callback):
 
 
 bot.polling(none_stop=True)
+
