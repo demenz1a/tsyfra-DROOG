@@ -1,12 +1,12 @@
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('8353976066:AAEvXMyk_Lz-pHiR15of0MANfTrnoXU-ClA')
+bot = telebot.TeleBot('8556665181:AAE2QWaT81aHT4Z8sUo74OBaAPGUgycSd2E')
 
 @bot.message_handler(commands=['Баштоо','start'])
 def start(message):
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton('Сурамжылоону баштоо',url='https://forms.gle/RCppbSBWsTHFFtsG7'))
+    markup.add(types.InlineKeyboardButton('Сурамжылоону баштоо',url='https://t.me/TsyfraDroogOpros'))
     markup.add(types.InlineKeyboardButton('Буттум',callback_data='ended'))
     bot.reply_to(message,'Саламатсызбы! Улантуу учун баскычты басыныз',reply_markup=markup)
 
@@ -29,4 +29,5 @@ def callback_message(callback):
 
 
 bot.polling(none_stop=True)
+
 
